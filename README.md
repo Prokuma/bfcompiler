@@ -1,5 +1,5 @@
 # bfcompiler
-Brainfuckのコンパイラです。久しぶりに雑なコードだが書いてみました。
+Brainfuckのコンパイラです。久しぶりに雑なコードだが書いてみました。テストでHello Worldを出力するコード(hello.bf)も入ってるので試してみてください。
 
 # 使い方
 1. compiler.cをコンパイルします。
