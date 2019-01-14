@@ -15,7 +15,7 @@ cc -o bfc compiler.c
 3. 2を実行するとsource_code.bf.sが生成されます。アセンブラでオブジェクトファイルを生成します。
 ここでは64bit Linux環境を基準とします。
 ```bash
-nasm -f -o source_code.bf.o elf64 source_code.bf.s
+nasm -f elf64 -o source_code.bf.o source_code.bf.s
 ```
 
 4. 3で生成されたオブジェクトファイルを用い、実行ファイルを生成します。
