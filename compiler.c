@@ -63,8 +63,9 @@ int main(int argc, char **argv){
                 sprintf(tmp, "loop%d:\n", count);
                 len = putString(&source, tmp, len);
                 break;
-            case ']':
-                len = putString(&source, "cmp dword [var0], 0\n", len);
+           case ']':
+                sprintf(tmp, "cmp dword [var%d], 0\n", count_ptr);
+                len = putString(&source, tmp, len);
                 sprintf(tmp, "jnz loop%d\n", count);
                 len = putString(&source, tmp, len);
                 count++;
